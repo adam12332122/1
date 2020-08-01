@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo h1 {
+    font-weight: 900;
+    color: #124193;
+}
+
+.logo h3 {
+    color: red;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    list-style: none;
+    margin: 1rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.Sign-up {
+    background-color: #35c2cf;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    border-radius: 4px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.hamburger {
+    margin-left: 1rem;
+    display: none;
+    background: 0;
+}
+
+.hero {
+    background: url(image.jpg);
+    height: calc(100vh - 80px);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: min(90%, 1000px);
+}
+
+.hero h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 42px;
+}
+
+.hero form {
+    display: flex;
+    width: 100%;
+    height: 70px;
+}
+
+.hero input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding-left: 2rem;
+    font-family: 'open sans', 'Font Awesome 5 free' !important;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.hero button {
+    background-color: #f89259;
+    color: #fff;
+    width: 300px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 675px) {
+    .nav {
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        background-color: #35c2cf;
+        color: #fff;
+    }
+    .show {
+        display: flex;
+    }
+    .nav a {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    .hamburger {
+        display: block;
+        z-index: 55;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero form {
+        flex-direction: column;
+        height: auto;
+    }
+    .hero input {
+        margin-bottom: 1rem;
+        height: 3rem;
+    }
+    .hero button {
+        width: 150px;
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Sign-up {
+        background-color: #fff !important;
+        color: #35c2cf;
+        padding: 0;
+        margin-left: 1rem;
+        border-radius: 4px;
+        font-weight: 800;
+    }
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.home {
+    border: 2px solid black;
+    padding: 10px
+}
